@@ -1,0 +1,42 @@
+import Typography from "@material-ui/core/Typography";
+import WordCloud from "react-d3-cloud";
+
+const data = [
+  { text: "Leadership", value: 100 },
+  { text: "Engineering", value: 100 },
+  { text: "Entrepreneurship", value: 80 },
+  { text: "Startups", value: 80 },
+  { text: "Enterprise", value: 30 },
+  { text: "Architecture", value: 50 },
+  { text: "Distributed Systems", value: 50 },
+  { text: "Python", value: 60 },
+  { text: "CI/CD", value: 60 },
+  { text: "Test Automation", value: 60 },
+  { text: "Open Source", value: 60 },
+  { text: "Infrastructure", value: 50 },
+  { text: "DevOps", value: 50 },
+  { text: "Nameko", value: 30 },
+  { text: "Kubernetes", value: 30 },
+  { text: "Javascript", value: 30 },
+  { text: "React", value: 10 },
+  { text: "Nodejs", value: 10 },
+  { text: "HTML5", value: 10 },
+  { text: "MongoDB", value: 20 }
+];
+
+const fontSizeMapper = word => Math.log2(word.value / 2) ^ 1.3;
+
+const SimpleCloud = () => (
+  <WordCloud data={data} fontSizeMapper={fontSizeMapper} />
+);
+
+export default function Skills() {
+  return (
+    <div>
+      <Typography variant="h5" component="h2" gutterBottom>
+        Skills
+      </Typography>
+      <SimpleCloud />
+    </div>
+  );
+}

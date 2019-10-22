@@ -1,0 +1,33 @@
+{
+  "name": "nextjs",
+  "version": "4.0.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.5.1",
+    "@material-ui/styles": "latest",
+    "clsx": "latest",
+    "eslint-config-standard-react": "^9.2.0",
+    "next": "latest",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-d3-cloud": "^0.7.0",
+    "react-dom": "latest",
+    "react-scroll-to-component": "^1.0.2"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.5.0",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
