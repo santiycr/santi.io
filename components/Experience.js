@@ -35,7 +35,7 @@ export default function Experience() {
 
   const experiences = [
     {
-      image: "selenium.png",
+      image: "selenium.jpg",
       title: "The Selenium Project",
       role: "Core Contributor",
       labels: ["open source", "public speaking", "engineering"],

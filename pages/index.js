@@ -57,7 +57,9 @@ const useStyles = makeStyles(theme => ({
     paddingBottom: 16
   },
   hero: {
-    height: 800
+    height: 800,
+    display: "flex",
+    maxWidth: 912
   }
 }));
 
@@ -89,12 +91,12 @@ export default function Index() {
         </Container>
         <Container className={classes.wBackground}>
           <Container className={classes.content}>
-            <Values />
+            <Skills />
           </Container>
         </Container>
         <Container className={classes.gBackground}>
           <Container className={classes.content}>
-            <Skills />
+            <Values />
           </Container>
         </Container>
       </Container>
