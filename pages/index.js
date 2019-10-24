@@ -11,6 +11,8 @@ import Fade from "@material-ui/core/Fade";
 import grey from "@material-ui/core/colors/grey";
 import Hero from "../components/Hero";
 import Experience from "../components/Experience";
+import Values from "../components/Values";
+import ReachOut from "../components/ReachOut";
 import dynamic from "next/dynamic";
 
 const Skills = dynamic(() => import("../components/Skills"), {
@@ -87,8 +89,18 @@ export default function Index() {
         </Container>
         <Container className={classes.wBackground}>
           <Container className={classes.content}>
+            <Values />
+          </Container>
+        </Container>
+        <Container className={classes.gBackground}>
+          <Container className={classes.content}>
             <Skills />
           </Container>
+        </Container>
+      </Container>
+      <Container className={classes.wBackground}>
+        <Container className={classes.content}>
+          <ReachOut />
         </Container>
       </Container>
     </div>

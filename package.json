@@ -1,6 +1,6 @@
 {
   "name": "nextjs",
-  "version": "4.0.0",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.5.1",
@@ -14,20 +14,40 @@
     "react-dom": "latest",
     "react-scroll-to-component": "^1.0.2"
   },
+  "watch": {
+    "test": {
+      "patterns": [
+        "src",
+        "test",
+        "pages",
+        "components"
+      ]
+    }
+  },
   "scripts": {
+    "watch": "npm-watch",
     "dev": "next",
     "build": "next build",
+    "test": "jest",
     "start": "next start"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "^6.5.1",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.20.0",
+    "eslint-plugin-jest-formatting": "^1.1.0",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.5.0",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^24.9.0",
+    "jsdom": "15.2.0",
+    "jsdom-global": "3.0.2",
+    "npm-watch": "^0.6.0"
   }
 }

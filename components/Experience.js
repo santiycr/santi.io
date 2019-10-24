@@ -106,7 +106,7 @@ export default function Experience() {
 
   return (
     <Container>
-      <Typography variant="h5" component="h2" gutterBottom>
+      <Typography variant="h5" component="h2">
         Experience
       </Typography>
       {experiences.map((experience, eid) => {

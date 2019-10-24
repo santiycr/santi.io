@@ -1,5 +1,6 @@
 import Typography from "@material-ui/core/Typography";
 import WordCloud from "react-d3-cloud";
+import Container from "@material-ui/core/Container";
 
 const data = [
   { text: "Leadership", value: 100 },
@@ -39,11 +40,11 @@ const SimpleCloud = () => (
 
 export default function Skills() {
   return (
-    <div>
-      <Typography variant="h5" component="h2" gutterBottom>
+    <Container>
+      <Typography variant="h5" component="h2">
         Skills
       </Typography>
       <SimpleCloud />
-    </div>
+    </Container>
   );
 }
