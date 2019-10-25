@@ -9,6 +9,7 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:promise/recommended",
     "plugin:jest-formatting/recommended",
     "plugin:jest/all"
   ],
@@ -23,7 +24,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module"
   },
-  plugins: ["react", "jest", "jest-formatting"],
+  plugins: ["react", "jest", "jest-formatting", "promise"],
   rules: {
     "react/react-in-jsx-scope": "off"
   },
