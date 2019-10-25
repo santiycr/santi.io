@@ -74,10 +74,18 @@ export default function Index() {
           <AppBar className={classes.transparent}>
             <Toolbar>
               <Box flexGrow={1} />
-              <Button color="inherit">Experience</Button>
-              <Button color="inherit">Values</Button>
-              <Button color="inherit">Skills</Button>
-              <Button color="inherit">Reach Out</Button>
+              <Button color="inherit" href="#experience">
+                Experience
+              </Button>
+              <Button color="inherit" href="#skills">
+                Skills
+              </Button>
+              <Button color="inherit" href="#values">
+                Values
+              </Button>
+              <Button color="inherit" href="#reach-out">
+                Reach Out
+              </Button>
             </Toolbar>
           </AppBar>
         </Fade>
@@ -85,23 +93,23 @@ export default function Index() {
           <Hero />
         </Container>
         <Container className={classes.gBackground}>
-          <Container className={classes.content}>
+          <Container id="experience" className={classes.content}>
             <Experience />
           </Container>
         </Container>
         <Container className={classes.wBackground}>
-          <Container className={classes.content}>
+          <Container id="skills" className={classes.content}>
             <Skills />
           </Container>
         </Container>
         <Container className={classes.gBackground}>
-          <Container className={classes.content}>
+          <Container id="values" className={classes.content}>
             <Values />
           </Container>
         </Container>
       </Container>
       <Container className={classes.wBackground}>
-        <Container className={classes.content}>
+        <Container id="reach-out" className={classes.content}>
           <ReachOut />
         </Container>
       </Container>
