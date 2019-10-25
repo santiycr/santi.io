@@ -23,11 +23,20 @@
         "pages",
         "components"
       ]
+    },
+    "lint": {
+      "patterns": [
+        "src",
+        "test",
+        "pages",
+        "components"
+      ]
     }
   },
   "scripts": {
     "watch": "npm-watch",
     "dev": "next",
+    "lint": "eslint .",
     "build": "next build",
     "test": "jest",
     "start": "next start"
