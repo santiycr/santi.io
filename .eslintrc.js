@@ -29,5 +29,10 @@ module.exports = {
   },
   globals: {
     React: "writable"
+  },
+  settings: {
+    react: {
+      version: "detect"
+    }
   }
 };

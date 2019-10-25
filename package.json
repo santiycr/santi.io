@@ -33,6 +33,10 @@
       ]
     }
   },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
   "scripts": {
     "watch": "npm-watch",
     "dev": "next",
@@ -58,6 +62,7 @@
     "jest": "^24.9.0",
     "jsdom": "15.2.0",
     "jsdom-global": "3.0.2",
-    "npm-watch": "^0.6.0"
+    "npm-watch": "^0.6.0",
+    "pre-commit": "^1.2.2"
   }
 }
