@@ -7,13 +7,11 @@
     "@material-ui/icons": "^4.5.1",
     "@material-ui/styles": "latest",
     "clsx": "latest",
-    "eslint-config-standard-react": "^9.2.0",
     "next": "latest",
     "prop-types": "latest",
     "react": "latest",
     "react-d3-cloud": "^0.7.0",
-    "react-dom": "latest",
-    "react-scroll-to-component": "^1.0.2"
+    "react-dom": "latest"
   },
   "watch": {
     "test": {
@@ -51,13 +49,13 @@
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "^6.5.1",
     "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^22.20.0",
     "eslint-plugin-jest-formatting": "^1.1.0",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-sort-imports-es6-autofix": "^0.5.0",
     "eslint-plugin-standard": "^4.0.1",
     "jest": "^24.9.0",
     "jsdom": "15.2.0",
