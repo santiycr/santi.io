@@ -36,6 +36,47 @@ export default function Experience() {
 
   const experiences = [
     {
+      image: "whyline.jpg",
+      title: "Whyline",
+      role: "CTO",
+      labels: ["entrepreneurship", "product", "leadership"],
+      description: `As the new CTO, my task is that of leading the engineering organization through
+      a new phase of growth. To take the engineering team from 40 to 100, I'm helping define core
+      engineering principles, roles and responsibilities, tools and processes for scale that meet
+      the team's culture and needs.`
+    },
+    {
+      image: "blameless.png",
+      title: "Blameless",
+      role: "Co-Founder, CTO",
+      labels: ["entrepreneurship", "product", "leadership"],
+      description: `As CTO and Co-Founder, I owned the company's team and product efforts.
+      I architected and wrote the core of the Blameless SRE Platform, which today powers the
+      incident management and reliability practices of much of our industry. Through principles and
+      key hires, I formed the company's founding engineering team and led the engineering
+      organization.`
+    },
+    {
+      image: "mulesoft.png",
+      title: "Mulesoft",
+      role: "Principal Engineer, Core Platform as a Service Team",
+      labels: ["engineering", "enterprise", "devops"],
+      description: `I was lucky enough to be at Mulesoft the company's IPO, which taught me a lot
+      about such a transformation.  Through a role of technical leader in the Core PaaS team,
+      I helped define the vision for the company's centralized infrastructure efforts and hybrid
+      cloud initiative.`
+    },
+    {
+      image: "saucelabs.jpg",
+      title: "Sauce Labs",
+      role: "Director of Engineering, Core Services",
+      labels: ["entrepreneurship", "leadership", "devops"],
+      description: `Being first employee I held many key roles in the company for over 7 years. By
+      forming and leading the Core Services team for many years, I learned extensively about
+      distributed systems, DevOps, high availability and reliability. Being responsible for such
+      a key and technical team was challenging for my leadership skills and incredibly rewarding.`
+    },
+    {
       image: "selenium.jpg",
       title: "The Selenium Project",
       role: "Core Contributor",
@@ -43,53 +84,6 @@ export default function Experience() {
       description: `Started contributing to Selenium back in 2004! I was lucky enough to become an
       important member of the community, travel, speak in conferences and participate on what the
       project and community have become today.`
-    },
-    {
-      image: "saucelabs.jpg",
-      title: "Sauce Labs",
-      role: "Director of Engineering, Core Services",
-      labels: ["entrepreneurship", "leadership", "devops"],
-      description: `Joined as first employee back in 2008 and got to hold many roles in the company
-      for over 7 years. Ultimately building and running the Core Services team, I learned
-      extensively about distributed systems, complex operations, high availability and realiabily,
-      as well as a strong balance of leadership and team building.`
-    },
-    {
-      image: "mulesoft.png",
-      title: "Mulesoft",
-      role: "Principal Engineer, Core Platform as a Service Team",
-      labels: ["engineering", "enterprise", "devops"],
-      description: `I was lucky enough to be at Mulesoft for some of its most exciting growth
-      phases. Being present during their IPO taught me a lot about such a transformation.  Through
-      my role as technical leader for the Core PaaS team, I helped define the vision for the
-      company's centralized infrastructure efforts and hybrid cloud initiative. I also had a key
-      role leading the team and through an acquisition, dramatically growing that team into over ten
-      people in less than 3 months.`
-    },
-    {
-      image: "blameless.png",
-      title: "Blameless",
-      role: "Co-Founder, CTO",
-      labels: ["entrepreneurship", "product", "leadership"],
-      description: `Blameless was a whirlwind for me. After helping shape the idea of an SRE
-      platform, we immediately made it into Y Combinator (the prestigious accelerator). Before YC
-      even started, we were lucky enough to raise a strong Seed round from top-tier investors and
-      decided to go off to the races. In only a year, I architected and wrote the product that today
-      powers the incident management and reliability practices of some of the top enterprise
-      companies in our industry.  As I formed our founding engineering team, I turned on leadership
-      and they swiftly took over development. They have performed at the top of our industry since.
-      Unexpectedly, I left Blameless as the company raised its Series A due to differences of style
-      with my co-founders.  I treasure Blameless as an incredibly educating experience.`
-    },
-    {
-      image: "whyline.jpg",
-      title: "Whyline",
-      role: "CTO",
-      labels: ["entrepreneurship", "product", "leadership"],
-      description: `I joined Whyline with the task of powering the product and engineering
-      organization through its phase of fastest growth. To take the engineering team from 40 to 100,
-      I'm helping define engineering principles, roles and processes for scale that meet the team's
-      culture and skills.`
     }
   ];
 
