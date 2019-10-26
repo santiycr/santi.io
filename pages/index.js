@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
     background: "transparent3"
   },
   root: {
-    backgroundImage: "url(/static/images/self/self.webp)",
+    backgroundImage: "url(/static/images/self/self.jpg)",
     backgroundRepeat: "no-repeat",
     backgroundSize: "100%",
     backgroundPositionY: -300,

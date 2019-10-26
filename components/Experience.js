@@ -11,6 +11,7 @@ import * as colorsModule from "@material-ui/core/colors";
 const useStyles = makeStyles(theme => ({
   pics: {
     height: 140,
+    backgroundSize: [100, 100],
     objectFit: "contain",
     [theme.breakpoints.down("sm")]: {
       height: 140
