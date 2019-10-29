@@ -107,10 +107,10 @@ export default function Index() {
             <Values />
           </Container>
         </Container>
-      </Container>
-      <Container className={classes.wBackground}>
-        <Container id="reach-out" className={classes.content}>
-          <ReachOut />
+        <Container className={classes.wBackground}>
+          <Container id="reach-out" className={classes.content}>
+            <ReachOut />
+          </Container>
         </Container>
       </Container>
     </div>
