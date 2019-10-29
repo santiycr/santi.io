@@ -1,13 +1,7 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
-import AppBar from "@material-ui/core/AppBar";
-import Box from "@material-ui/core/Box";
-import Toolbar from "@material-ui/core/Toolbar";
-import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { makeStyles } from "@material-ui/core/styles";
-import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import Fade from "@material-ui/core/Fade";
 import grey from "@material-ui/core/colors/grey";
 import Hero from "../components/Hero";
 import Experience from "../components/Experience";
@@ -20,9 +14,6 @@ const Skills = dynamic(() => import("../components/Skills"), {
 });
 
 const useStyles = makeStyles(theme => ({
-  transparent: {
-    background: "transparent3"
-  },
   root: {
     backgroundImage: "url(/static/images/self/self.jpg)",
     backgroundRepeat: "no-repeat",
@@ -65,30 +56,10 @@ const useStyles = makeStyles(theme => ({
 
 export default function Index() {
   const classes = useStyles();
-  const scrolled = useScrollTrigger({ disableHysteresis: true });
   return (
     <div>
       <Container className={classes.root}>
         <CssBaseline />
-        <Fade in={scrolled}>
-          <AppBar className={classes.transparent}>
-            <Toolbar>
-              <Box flexGrow={1} />
-              <Button color="inherit" href="#experience">
-                Experience
-              </Button>
-              <Button color="inherit" href="#skills">
-                Skills
-              </Button>
-              <Button color="inherit" href="#values">
-                Values
-              </Button>
-              <Button color="inherit" href="#reach-out">
-                Reach Out
-              </Button>
-            </Toolbar>
-          </AppBar>
-        </Fade>
         <Container className={classes.hero}>
           <Hero />
         </Container>
