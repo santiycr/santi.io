@@ -1,6 +1,8 @@
 import Typography from "@material-ui/core/Typography";
 import WordCloud from "react-d3-cloud";
 import Container from "@material-ui/core/Container";
+import { useTheme } from "@material-ui/core/styles";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const data = [
   { text: "Leadership", value: 100 },
@@ -29,14 +31,20 @@ const data = [
 
 const fontSizeMapper = word => Math.log2(word.value ^ 2) * 6;
 
-const SimpleCloud = () => (
-  <WordCloud
-    data={data}
-    fontSizeMapper={fontSizeMapper}
-    padding={3}
-    height={300}
-  />
-);
+const SimpleCloud = () => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up("sm"));
+
+  return (
+    <WordCloud
+      data={data}
+      fontSizeMapper={fontSizeMapper}
+      padding={3}
+      height={matches ? 300 : 600}
+      width={matches ? 900 : 300}
+    />
+  );
+};
 
 export default function Skills() {
   return (
