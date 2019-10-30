@@ -8,6 +8,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import * as colorsModule from "@material-ui/core/colors";
 import PropTypes from "prop-types";
+import Hidden from "@material-ui/core/Hidden";
 
 const useStyles = makeStyles(theme => ({
   pics: {
@@ -110,9 +111,11 @@ function Job({ experience, key }) {
                 </Typography>
                 <br />
                 <Box flexGrow={1} />
-                {experience.labels.map((label, lid) => {
-                  return <Label label={label} key={lid} />;
-                })}
+                <Hidden xsDown>
+                  {experience.labels.map((label, lid) => {
+                    return <Label label={label} key={lid} />;
+                  })}
+                </Hidden>
               </Box>
               <Typography variant="subtitle1" color="textSecondary">
                 {experience.role}
