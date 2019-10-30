@@ -4,6 +4,8 @@ import Grid from "@material-ui/core/Grid";
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
+import Hidden from "@material-ui/core/Hidden";
+
 import {
   ExpandMore,
   VerifiedUser,
@@ -59,9 +61,11 @@ function Value({ value }) {
     <ExpansionPanel>
       <ExpansionPanelSummary expandIcon={<ExpandMore />}>
         <Grid container direction="row" alignItems="center" spacing={2}>
-          <Grid item>
-            <value.icon color="primary" aria-hidden="true" />
-          </Grid>
+          <Hidden xsDown>
+            <Grid item>
+              <value.icon color="primary" aria-hidden="true" />
+            </Grid>
+          </Hidden>
           <Grid item>
             <Typography variant="h6">{value.value}</Typography>
           </Grid>
