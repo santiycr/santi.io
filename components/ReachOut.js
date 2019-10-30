@@ -11,31 +11,31 @@ export default function ReachOut() {
         Reach Out
       </Typography>
       <Grid container direction="row" justify="center" alignItems="center">
-        <Grid item xs={1}>
+        <Grid item xs={2} sm={1}>
           <Link href="mailto:santiycr@gmail.com">
             <Email />
             <Typography variant="srOnly">Email</Typography>
           </Link>
         </Grid>
-        <Grid item xs={1}>
+        <Grid item xs={2} sm={1}>
           <Link href="https://wa.me/14158572684">
             <WhatsApp />
             <Typography variant="srOnly">WhatsApp</Typography>
           </Link>
         </Grid>
-        <Grid item xs={1}>
+        <Grid item xs={2} sm={1}>
           <Link href="https://www.linkedin.com/in/santiycr/">
             <LinkedIn />
             <Typography variant="srOnly">Linkedin</Typography>
           </Link>
         </Grid>
-        <Grid item xs={1}>
+        <Grid item xs={2} sm={1}>
           <Link href="https://twitter.com/santiycr">
             <Twitter />
             <Typography variant="srOnly">Twitter</Typography>
           </Link>
         </Grid>
-        <Grid item xs={1}>
+        <Grid item xs={2} sm={1}>
           <Link href="https://github.com/santiycr">
             <GitHub />
             <Typography variant="srOnly">GitHub</Typography>
