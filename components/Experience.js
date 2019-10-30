@@ -90,10 +90,10 @@ export default function Experience() {
   );
 }
 
-function Job({ experience, key }) {
+function Job({ experience }) {
   const classes = useStyles();
   return (
-    <Box my={2} key={key}>
+    <Box my={2}>
       <Card className={classes.card}>
         <Grid container direction="row" justify="flex-start">
           <Grid item md={2} xs={12}>
@@ -130,15 +130,13 @@ function Job({ experience, key }) {
 }
 
 Job.propTypes = {
-  experience: PropTypes.object,
-  key: PropTypes.number
+  experience: PropTypes.object
 };
 
-function Label({ label, key }) {
+function Label({ label }) {
   return (
     <Box
       component="span"
-      key={key}
       bgcolor={getColor(label)}
       color="white"
       m={0.5}
@@ -152,8 +150,7 @@ function Label({ label, key }) {
 }
 
 Label.propTypes = {
-  label: PropTypes.string,
-  key: PropTypes.number
+  label: PropTypes.string
 };
 
 const colorAssignments = {};
