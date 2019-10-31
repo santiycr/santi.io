@@ -3,14 +3,13 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Link from "@material-ui/core/Link";
+import Heading from "./Heading";
 import { LinkedIn, Twitter, GitHub, Email, WhatsApp } from "@material-ui/icons";
 
 export default function ReachOut() {
   return (
     <Container>
-      <Typography variant="h5" component="h2">
-        Reach Out
-      </Typography>
+      <Heading title="Reach Out" />
       <Box my={2}>
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid item xs={2} sm={1}>

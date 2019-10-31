@@ -9,6 +9,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import * as colorsModule from "@material-ui/core/colors";
 import PropTypes from "prop-types";
 import Hidden from "@material-ui/core/Hidden";
+import Heading from "./Heading";
 
 const useStyles = makeStyles(theme => ({
   pics: {
@@ -80,9 +81,7 @@ const experiences = [
 export default function Experience() {
   return (
     <Container>
-      <Typography variant="h5" component="h2">
-        Experience
-      </Typography>
+      <Heading title="Experience" />
       {experiences.map((experience, eid) => {
         return <Job experience={experience} key={eid} />;
       })}

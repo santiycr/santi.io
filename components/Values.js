@@ -6,6 +6,8 @@ import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import Hidden from "@material-ui/core/Hidden";
+import Heading from "./Heading";
+import PropTypes from "prop-types";
 
 import {
   ExpandMore,
@@ -16,7 +18,6 @@ import {
   GroupWork,
   Favorite
 } from "@material-ui/icons";
-import PropTypes from "prop-types";
 
 const values = [
   {
@@ -86,9 +87,7 @@ Value.propTypes = {
 export default function Contact() {
   return (
     <Container>
-      <Typography variant="h5" component="h2">
-        My Personal Values
-      </Typography>
+      <Heading title="My Personal Values" />
       <Box my={2}>
         {values.map((value, vid) => {
           return <Value key={vid} value={value} />;

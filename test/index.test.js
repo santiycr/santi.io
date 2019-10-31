@@ -16,11 +16,11 @@ describe("<Index/>", () => {
     expect(index.find("h2")).toHaveLength(3);
   });
 
-  it("has all sections rendered as h5", () => {
+  it("has all sections rendered as h4", () => {
     expect.hasAssertions();
     const index = mount(<Index />);
     index.find("h2").forEach(node => {
-      expect(node.hasClass("MuiTypography-h5")).toStrictEqual(true);
+      expect(node.hasClass("MuiTypography-h4")).toStrictEqual(true);
     });
   });
 
