@@ -42,6 +42,7 @@ const SimpleCloud = () => {
       padding={3}
       height={matches ? 300 : 600}
       width={matches ? 900 : 300}
+      font={theme.typography.fontFamily}
     />
   );
 };

@@ -6,7 +6,7 @@ describe("<Index/>", () => {
   it("renders without crashing", () => {
     expect.assertions(1);
     const index = mount(<Index />);
-    expect(index.find("h1").text()).toMatch(/Hello World/);
+    expect(index.find("h1").text()).toMatch(/Santiago/);
   });
 
   it("has all SSR sections", () => {

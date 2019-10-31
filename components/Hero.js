@@ -2,16 +2,12 @@ import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
+import Hidden from "@material-ui/core/Hidden";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   heading: {
-    backgroundColor: "hsla(300, 20%, 6%, 0.4)",
     color: "white",
-    borderRadius: 7,
-    padding: 16,
-    [theme.breakpoints.down("sm")]: {
-      backgroundColor: "inherit"
-    }
+    textShadow: "0 1px 2px rgba(0,0,0,.2)"
   },
   hero: {
     display: "flex",
@@ -20,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     backgroundPosition: "center center",
     backgroundSize: "cover",
     maxWidth: "100%",
-    height: "80vh"
+    height: "90vh"
   }
 }));
 
@@ -31,12 +27,19 @@ export default function Hero() {
       <Grid container justify="flex-start" alignItems="center">
         <Grid item xs={false} sm={2} lg={3} />
         <Grid item className={classes.heading} xs={12} sm={4} lg={3}>
+          <Typography variant="subtitle1">Hello! My name is</Typography>
           <Typography variant="h4" component="h1">
-            Hello World!
-            <br />
-            My name is
-            <br />
             Santiago Suarez Ordoñez
+            <Hidden xsDown>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+            </Hidden>
           </Typography>
         </Grid>
       </Grid>

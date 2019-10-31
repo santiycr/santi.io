@@ -1,7 +1,7 @@
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
@@ -133,11 +133,14 @@ Job.propTypes = {
 };
 
 function Label({ label }) {
+  const theme = useTheme(),
+    bgcolor = getColor(label),
+    color = theme.palette.getContrastText(bgcolor);
   return (
     <Box
       component="span"
-      bgcolor={getColor(label)}
-      color="white"
+      bgcolor={bgcolor}
+      color={color}
       m={0.5}
       px={0.5}
       py={0.25}
@@ -154,13 +157,21 @@ Label.propTypes = {
 
 const colorAssignments = {};
 
+let keys = [
+  "red",
+  "pink",
+  "purple",
+  "indigo",
+  "blue",
+  "cyan",
+  "teal",
+  "lime",
+  "amber",
+  "green"
+];
 function randomColor() {
-  const keys = Object.keys(colorsModule);
-  let color = {};
-  while (!color[50]) {
-    color = colorsModule[keys[(keys.length * Math.random()) << 0]];
-  }
-  return color;
+  const colorKey = keys.splice((keys.length * Math.random()) << 0, 1)[0];
+  return colorsModule[colorKey];
 }
 
 function getColor(label) {
@@ -169,6 +180,6 @@ function getColor(label) {
   } else {
     const color = randomColor();
     colorAssignments[label] = color[500];
-    return color;
+    return color[500];
   }
 }
