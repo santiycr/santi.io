@@ -28,6 +28,10 @@ describe("<Index/>", () => {
     expect.hasAssertions();
     const index = mount(<Index />);
     const texts = index.find("h2").map(node => node.text());
-    expect(texts).toStrictEqual(["Experience", "Values", "Reach Out"]);
+    expect(texts).toStrictEqual([
+      "Experience",
+      "My Personal Values",
+      "Reach Out"
+    ]);
   });
 });

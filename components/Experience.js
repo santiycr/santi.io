@@ -30,10 +30,10 @@ const experiences = [
     title: "Whyline",
     role: "CTO",
     labels: ["entrepreneurship", "product", "leadership"],
-    description: `As the new CTO, my task is that of leading the engineering organization through
-      a new phase of growth. To take the engineering team from 40 to 100, I'm helping define core
-      engineering principles, roles and responsibilities, tools and processes for scale that meet
-      the team's culture and needs.`
+    description: `I was brought on as CTO to lead the engineering organization through
+      a new phase of growth and grow engineering from 40 to 100 people. I'm focused on defining core
+      engineering principles, roles and responsibilities, while choosing tools and processes that meet
+      the team's culture and needs as we scale.`
   },
   {
     image: "blameless.png",
@@ -51,28 +51,28 @@ const experiences = [
     title: "Mulesoft",
     role: "Principal Engineer, Core Platform as a Service Team",
     labels: ["engineering", "enterprise", "devops"],
-    description: `I was lucky enough to be at Mulesoft the company's IPO, which taught me a lot
-      about such a transformation.  Through a role of technical leader in the Core PaaS team,
+    description: `I was lucky enough to be at Mulesoft during the company's IPO, which taught me a lot
+      about high growth transformation. Through my role as technical leader in the Core PaaS team,
       I helped define the vision for the company's centralized infrastructure efforts and hybrid
       cloud initiative.`
   },
   {
     image: "saucelabs.jpg",
     title: "Sauce Labs",
-    role: "Director of Engineering, Core Services",
+    role: "Employee #1, Director of Engineering, Core Services",
     labels: ["entrepreneurship", "leadership", "devops"],
-    description: `Being first employee I held many key roles in the company for over 7 years. By
-      forming and leading the Core Services team for many years, I learned extensively about
-      distributed systems, DevOps, high availability and reliability. Being responsible for such
-      a key and technical team was challenging for my leadership skills and incredibly rewarding.`
+    description: `During my 7 years at the company, I held many key roles. As we scaled, I formed and led the
+    Core Services team, which oversaw Sauce's extensive cloud infratructure for our customers. I learned extensively about distributed systems, DevOps, high
+    availability and reliability. Being responsible for such a key and technical team was
+    challenging for my leadership skills and incredibly rewarding.`
   },
   {
     image: "selenium.jpg",
     title: "The Selenium Project",
     role: "Core Contributor",
     labels: ["open source", "public speaking", "engineering"],
-    description: `Started contributing to Selenium back in 2004! I was lucky enough to become an
-      important member of the community, travel, speak in conferences and participate on what the
+    description: `I started contributing to Selenium back in 2004! I was lucky enough to become an
+      important member of the community, to travel and speak at conferences, and participate in what the
       project and community have become today.`
   }
 ];
