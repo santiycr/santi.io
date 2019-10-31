@@ -167,7 +167,7 @@ let keys = [
   "teal",
   "lime",
   "amber",
-  "green"
+  "lightGreen"
 ];
 function randomColor() {
   const colorKey = keys.splice((keys.length * Math.random()) << 0, 1)[0];
