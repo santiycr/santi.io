@@ -4,8 +4,10 @@ import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../src/theme";
+import Router from "next/router";
+import withGA from "next-ga";
 
-export default class MyApp extends App {
+class MyApp extends App {
   componentDidMount() {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector("#jss-server-side");
@@ -31,3 +33,5 @@ export default class MyApp extends App {
     );
   }
 }
+
+export default withGA("UA-151746859-1", Router)(MyApp);
