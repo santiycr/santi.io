@@ -10,25 +10,25 @@ import ReachOut from "../components/ReachOut";
 import dynamic from "next/dynamic";
 
 const Skills = dynamic(() => import("../components/Skills"), {
-  ssr: false
+  ssr: false,
 });
 
 const useStyles = makeStyles(() => ({
   wBackground: {
     background: "white",
     width: "100%",
-    maxWidth: "100%"
+    maxWidth: "100%",
   },
   gBackground: {
     background: grey[200],
     width: "100%",
-    maxWidth: "100%"
+    maxWidth: "100%",
   },
   content: {
     maxWidth: 960,
     paddingTop: 16,
-    paddingBottom: 16
-  }
+    paddingBottom: 16,
+  },
 }));
 
 export default function Index() {

@@ -4,6 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Card from "@material-ui/core/Card";
+import Link from "@material-ui/core/Link";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import * as colorsModule from "@material-ui/core/colors";
@@ -11,61 +12,77 @@ import PropTypes from "prop-types";
 import Hidden from "@material-ui/core/Hidden";
 import Heading from "./Heading";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   pics: {
     height: 140,
     backgroundSize: [100, 100],
     objectFit: "contain",
     [theme.breakpoints.down("sm")]: {
-      height: 140
+      height: 140,
     },
     [theme.breakpoints.up("md")]: {
-      height: 140
-    }
-  }
+      height: 140,
+    },
+  },
 }));
 
 const experiences = [
   {
+    image: "momentum.png",
+    title: "Momentum",
+    link: "https://momentum.io",
+    role: "CEO",
+    labels: ["sales", "product", "leadership"],
+    description: `I co-founded Momentum to rethink the way enterprise sales is done.
+    Momentum helps teams close deals together in Slack. In a world where selling enterprise software
+    requires multiple handoffs and conversations between sales and engineering, finance, and
+    customer success, Momentum helps reps drive their sales process via Slack and leverage the right
+    people at the right time to move deals over the goal line.`,
+  },
+  {
     image: "whyline.jpg",
     title: "Whyline",
+    link: "https://whyline.com",
     role: "CTO",
     labels: ["entrepreneurship", "product", "leadership"],
     description: `I was brought on as CTO to lead the engineering organization through
       a new phase of growth and grow engineering from 40 to 100 people. I'm focused on defining core
       engineering principles, roles and responsibilities, while choosing tools and processes that meet
-      the team's culture and needs as we scale.`
+      the team's culture and needs as we scale.`,
   },
   {
     image: "blameless.png",
     title: "Blameless",
+    link: "https://blameless.com",
     role: "Co-Founder, CTO",
     labels: ["entrepreneurship", "product", "leadership"],
     description: `As CTO and Co-Founder, I owned the company's team and product efforts.
       I architected and wrote the core of the Blameless SRE Platform, which today powers the
       incident management and reliability practices of much of our industry. Through principles and
       key hires, I formed the company's founding engineering team and led the engineering
-      organization.`
+      organization.`,
   },
   {
     image: "mulesoft.png",
     title: "Mulesoft",
+    link: "https://mulesoft.com",
     role: "Principal Engineer, Core Platform as a Service Team",
     labels: ["engineering", "enterprise", "devops"],
     description: `I was lucky enough to be at Mulesoft during the company's IPO, which taught me a lot
       about high growth transformation. Through my role as technical leader in the Core PaaS team,
       I helped define the vision for the company's centralized infrastructure efforts and hybrid
-      cloud initiative.`
+      cloud initiative.`,
   },
   {
     image: "saucelabs.jpg",
     title: "Sauce Labs",
+    link: "https://saucelabs.com",
     role: "Employee #1, Director of Engineering, Core Services",
     labels: ["entrepreneurship", "leadership", "devops"],
     description: `During my 7 years at the company, I held many key roles. As we scaled, I formed and led the
     Core Services team, which oversaw Sauce's extensive cloud infratructure for our customers. I learned extensively about distributed systems, DevOps, high
     availability and reliability. Being responsible for such a key and technical team was
-    challenging for my leadership skills and incredibly rewarding.`
+    challenging for my leadership skills and incredibly rewarding.`,
   },
   {
     image: "selenium.jpg",
@@ -74,8 +91,8 @@ const experiences = [
     labels: ["open source", "public speaking", "engineering"],
     description: `I started contributing to Selenium back in 2004! I was lucky enough to become an
       important member of the community, to travel and speak at conferences, and participate in what the
-      project and community have become today.`
-  }
+      project and community have become today.`,
+  },
 ];
 
 export default function Experience() {
@@ -105,9 +122,17 @@ function Job({ experience }) {
           <Grid item md={10} xs={12}>
             <CardContent>
               <Box display="flex">
-                <Typography component="h5" variant="h5">
-                  {experience.title}
-                </Typography>
+                {"link" in experience ? (
+                  <Link href={experience.link} color="textPrimary">
+                    <Typography component="h5" variant="h5">
+                      {experience.title}
+                    </Typography>
+                  </Link>
+                ) : (
+                  <Typography component="h5" variant="h5">
+                    {experience.title}
+                  </Typography>
+                )}
                 <br />
                 <Box flexGrow={1} />
                 <Hidden xsDown>
@@ -129,7 +154,7 @@ function Job({ experience }) {
 }
 
 Job.propTypes = {
-  experience: PropTypes.object
+  experience: PropTypes.object,
 };
 
 function Label({ label }) {
@@ -152,7 +177,7 @@ function Label({ label }) {
 }
 
 Label.propTypes = {
-  label: PropTypes.string
+  label: PropTypes.string,
 };
 
 const colorAssignments = {};
@@ -167,7 +192,7 @@ let keys = [
   "teal",
   "lime",
   "amber",
-  "lightGreen"
+  "lightGreen",
 ];
 function randomColor() {
   const colorKey = keys.splice((keys.length * Math.random()) << 0, 1)[0];
