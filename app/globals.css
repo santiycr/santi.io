@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), ui-serif, Georgia, "Times New Roman", serif;
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-soft: var(--soft);
+}
+
+:root {
+  --paper: #f3f0ea;
+  --ink: #1c1916;
+  --muted: #5c564c;
+  --line: #e0d9cc;
+  --accent: #0c5c56;
+  --soft: #e7e1d4;
+  color-scheme: light;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] {
+  --paper: #131210;
+  --ink: #f3efe6;
+  --muted: #c8c0b3;
+  --line: #322e27;
+  --accent: #8ed4ca;
+  --soft: #221f1b;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #131210;
+    --ink: #f3efe6;
+    --muted: #c8c0b3;
+    --line: #322e27;
+    --accent: #8ed4ca;
+    --soft: #221f1b;
+    color-scheme: dark;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 28%, transparent);
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.nav-link {
+  color: var(--ink);
+  text-decoration-line: none;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
+section[id] {
+  scroll-margin-top: 1.5rem;
+}
+
+.when-light {
+  display: inline-flex;
+}
+
+.when-dark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .when-light {
+    display: none;
+  }
+
+  :root:not([data-theme="light"]) .when-dark {
+    display: inline-flex;
+  }
+}
+
+:root[data-theme="dark"] .when-light {
+  display: none;
+}
+
+:root[data-theme="dark"] .when-dark {
+  display: inline-flex;
+}
+
+:root[data-theme="light"] .when-light {
+  display: inline-flex;
+}
+
+:root[data-theme="light"] .when-dark {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
