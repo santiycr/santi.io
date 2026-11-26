@@ -1,5 +1,12 @@
-# santi.io website
+# santi.io
 
-[![CircleCI](https://circleci.com/gh/santiycr/santi.io.svg?style=svg)](https://circleci.com/gh/santiycr/santi.io)
+Personal site for Santi Suarez Ordoñez.
 
-Hi! Thanks for checking out my website [https://santi.io](https://santi.io)
+All public copy is in [`content/site.ts`](content/site.ts).
+
+```bash
+npm install
+npm run dev
+```
+
+The site is a static Next.js app and deploys on Vercel with no extra config. There is no analytics tag.

@@ -1,66 +1,26 @@
 {
-  "name": "nextjs",
-  "version": "2.0.0",
+  "name": "santi.io",
+  "version": "3.0.0",
   "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.5.1",
-    "@material-ui/icons": "^4.5.1",
-    "@material-ui/styles": "latest",
-    "clsx": "latest",
-    "next": "latest",
-    "next-ga": "^2.3.4",
-    "prop-types": "latest",
-    "react": "latest",
-    "react-d3-cloud": "^0.7.0",
-    "react-dom": "latest"
+  "engines": {
+    "node": ">=20.9.0"
   },
-  "watch": {
-    "test": {
-      "patterns": [
-        "src",
-        "test",
-        "pages",
-        "components"
-      ]
-    },
-    "lint": {
-      "patterns": [
-        "src",
-        "test",
-        "pages",
-        "components"
-      ]
-    }
-  },
-  "pre-commit": [
-    "lint",
-    "test"
-  ],
   "scripts": {
-    "watch": "npm-watch",
-    "dev": "next",
-    "lint": "eslint .",
+    "dev": "next dev",
     "build": "next build",
-    "test": "jest",
     "start": "next start"
   },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.15.1",
-    "eslint": "^6.5.1",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-config-standard-react": "^9.2.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.20.0",
-    "eslint-plugin-jest-formatting": "^1.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-standard": "^4.0.1",
-    "jest": "^24.9.0",
-    "jsdom": "15.2.0",
-    "jsdom-global": "3.0.2",
-    "npm-watch": "^0.6.0",
-    "pre-commit": "^1.2.2"
+    "@tailwindcss/postcss": "4.3.5",
+    "@types/node": "^22.19.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "tailwindcss": "4.3.5",
+    "typescript": "^5.9.0"
   }
 }
