@@ -35,8 +35,8 @@ export const site = {
     id: "now",
     heading: "Now",
     paragraphs: [
-      "Salesforce announced a definitive agreement to acquire Momentum on 18 February 2026. I wrote [the announcement](https://www.momentum.io/blog/salesforce-signs-definitive-agreement-to-acquire-momentum). The deal closed on 2 March 2026. Momentum on Sales Cloud became generally available in early November 2026.",
-      "I started the company in May 2020 with Ashley Wilson and Moiz Virani, and I was CEO until May 2026. [South Park Commons](https://www.southparkcommons.com/companies/momentum) lists the three of us as founders.",
+      "Salesforce acquired Momentum in 2026. I wrote [the announcement](https://www.momentum.io/blog/salesforce-signs-definitive-agreement-to-acquire-momentum). Momentum on Sales Cloud became generally available in early November 2026.",
+      "I started the company in May 2020 with Ashley Wilson and Moiz Virani, and I was CEO until May 2026.",
     ],
   },
   earlier: {
@@ -47,7 +47,8 @@ export const site = {
         years: "2019 to 2020",
         org: "Whyline",
         role: "CTO",
-        detail: "I was CTO from February 2019 to February 2020.",
+        detail:
+          "I was CTO from February 2019 to February 2020. Whyline let people see live wait times and join a line remotely. [CLEAR acquired the company](https://ir.clearme.com/news-events/press-releases/detail/35/clear-acquires-virtual-queuing-company-whyline) in January 2022.",
       },
       {
         years: "2017 to 2018",
@@ -73,12 +74,12 @@ export const site = {
           "I joined as the first employee and later led Core Services as Director of Engineering. I was there about seven years. The title changed along the way.",
       },
       {
-        years: "",
+        years: "Since 2007",
         org: "Selenium",
         href: "https://www.selenium.dev",
         role: "Core contributor",
         detail:
-          "I contributed to Selenium as a core member of the project, including while I was at Sauce Labs.",
+          "I started contributing to Selenium in 2007. I kept contributing as a core member of the project while I was at Sauce Labs.",
       },
     ],
   },
